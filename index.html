@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"
+      dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Come Back to Now</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:900"
+        rel="stylesheet">
+</head>
+
+<body>
+  <style media="screen">
+
+  body {
+    font-size: 7vh;
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 2vh 2vw;
+  }
+
+  </style>
+
+  Elliot, your mind has taken control. Take a deep breath, and come back to the now. Consider sitting down and meditating for just one minute. You can listen to this <a id="meditationLink" href="#">meditation video</a>.
+  <br>
+  <br>
+  If you feel that you have a lot of energy, do pushups.
+  <br>
+  <br>
+  Listen to yourself, and separate from your mind.
+
+  <script type="text/javascript">
+    var meditationLinks = [
+      'https://www.youtube.com/watch?v=Jyy0ra2WcQQ',
+      'https://www.youtube.com/watch?v=xoYnqvadurg',
+      'https://www.youtube.com/watch?v=41GqbdgYAmE',
+      'https://youtu.be/7xalaT2FwS8',
+      'https://www.youtube.com/watch?v=Md724SxePJM',
+      'https://www.youtube.com/watch?v=TnNOiorgIXk',
+      'https://www.youtube.com/watch?v=gdEZugEqST8',
+    ];
+
+    document.getElementById('meditationLink').setAttribute('href', meditationLinks[Math.floor(Math.random() * meditationLinks.length)]);
+  </script>
+</body>
+
+</html>
